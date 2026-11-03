@@ -835,7 +835,7 @@ def render_maintenance_prompt(
         "",
         "Canonical repositories:",
         f"- Backend/runtime: {codex.configured_repository()}",
-        "- Frontend/Command: anevum/anevum-web",
+        "- Frontend/Command: devonalanakins/anevum-web",
         "",
         "PASS SELECTION",
         f"- Mode: {_prompt_value(manifest.get('mode'), 'TARGETED')}",

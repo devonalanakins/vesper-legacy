@@ -11,7 +11,7 @@ from typing import Any, Mapping
 
 SCHEMA = "codex_handoff.v1"
 LEGACY_REPOSITORY = "anevum/alpaca-trader"
-RENAMED_REPOSITORY = "anevum/rhen"
+RENAMED_REPOSITORY = "devonalanakins/rhen"
 ALLOWED_REPOSITORIES = frozenset({LEGACY_REPOSITORY, RENAMED_REPOSITORY})
 # Backward-compatible default while the GitHub repository still has its legacy name.
 REPOSITORY = RENAMED_REPOSITORY

@@ -60,19 +60,19 @@ def observations():
 
 def test_repository_cutover_accepts_legacy_and_rhen_names(monkeypatch):
     assert repository_allowed("anevum/alpaca-trader")
-    assert repository_allowed("anevum/rhen")
+    assert repository_allowed("devonalanakins/rhen")
     assert not repository_allowed("other/repo")
 
-    monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "anevum/rhen")
-    assert configured_repository() == "anevum/rhen"
+    monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "devonalanakins/rhen")
+    assert configured_repository() == "devonalanakins/rhen"
     p = package()
-    assert p["repository"] == "anevum/rhen"
-    assert p["repositories"] == ["anevum/rhen"]
-    assert "Repository: anevum/rhen" in p["prompt"]
+    assert p["repository"] == "devonalanakins/rhen"
+    assert p["repositories"] == ["devonalanakins/rhen"]
+    assert "Repository: devonalanakins/rhen" in p["prompt"]
 
 
 def test_repository_cutover_github_association_uses_configured_name(monkeypatch):
-    monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "anevum/rhen")
+    monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "devonalanakins/rhen")
 
     async def get(path):
         if path == "branches/main":
@@ -84,12 +84,12 @@ def test_repository_cutover_github_association_uses_configured_name(monkeypatch)
                 "number": 42,
                 "base": {
                     "ref": "main",
-                    "repo": {"full_name": "anevum/rhen"},
+                    "repo": {"full_name": "devonalanakins/rhen"},
                 },
                 "head": {
                     "ref": "codex/handoff/" + ID,
                     "sha": SHA,
-                    "repo": {"full_name": "anevum/rhen"},
+                    "repo": {"full_name": "devonalanakins/rhen"},
                 },
                 "body": (
                     "IREN-Handoff: " + ID + "\n"
@@ -125,7 +125,7 @@ def test_repository_cutover_github_association_uses_configured_name(monkeypatch)
             get,
             handoff_id=ID,
             objective_key="iren.test",
-            repository="anevum/rhen",
+            repository="devonalanakins/rhen",
         )
     )
     assert result["association_valid"] is True
