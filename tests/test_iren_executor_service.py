@@ -137,7 +137,7 @@ def test_repository_cutover_allows_rhen_and_rejects_unrelated_repo(monkeypatch):
     monkeypatch.setenv("IREN_MODEL_DAILY_BUDGET_USD", "2")
     monkeypatch.setenv("IREN_MODEL_JOB_BUDGET_USD", "1")
 
-    monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "anevum/rhen")
+    monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "devonalanakins/rhen")
     assert runtime.software_backend_configured is True
 
     monkeypatch.setenv("IREN_GITHUB_REPOSITORY", "other/repo")
