@@ -4,6 +4,8 @@
 
 > **Public documentation note · November 3, 2026:** This is research and execution software, not a public brokerage product, profitability claim, or instruction to enable live trading. Review current branch, broker eligibility, risk controls and infrastructure independently; older Railway-era deployment references may be historical.
 
+> **Project identity · November 3, 2026:** This `rhen` repository contains an existing financial-market research and guarded execution system, **not** the newly named experimental **Rhen programming language**. The language has separate, locally tested ISL-era prototype artifacts; no compiler source has been merged here. Repository history, trading authorization controls, dependencies and release requirements remain unchanged by this documentation update.
+
 [Current research branches](https://github.com/devonalanakins/rhen/pulls) · [Security](SECURITY.md)
 
 RHEN is an independent market-research and deterministic automated-execution project. It is separate from Anevum's creative studio.
