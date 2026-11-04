@@ -6,7 +6,7 @@
 
 [Current research branches](https://github.com/devonalanakins/rhen/pulls) · [Security](SECURITY.md)
 
-RHEN is ANEVUM's private market-research and deterministic automated-execution service.
+RHEN is an independent market-research and deterministic automated-execution project. It is separate from Anevum's creative studio.
 
 ## Current build
 
