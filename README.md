@@ -1,14 +1,18 @@
 <p align="center"><img src=".github/assets/readme-hero.svg" alt="Original RHEN project illustration" width="100%" /></p>
 
-# RHEN
+# Vesper Legacy
+
+**Historical financial/market research source (formerly RHEN).** This repository is preserved for code history and review. It is **not** the new [Rhen programming language](https://github.com/devonalanakins/rhen) and **not** the active [Vesper clean rebuild](https://github.com/devonalanakins/vesper). A GitHub rename preserved this repository's identity, branches, and pull requests. Historic deployment text below is reference material, not authorization or proof of current live execution.
 
 > **Public documentation note · November 3, 2026:** This is research and execution software, not a public brokerage product, profitability claim, or instruction to enable live trading. Review current branch, broker eligibility, risk controls and infrastructure independently; older Railway-era deployment references may be historical.
 
-[Current research branches](https://github.com/devonalanakins/rhen/pulls) · [Security](SECURITY.md)
+> **Identity correction · November 4, 2026:** This repository is now `vesper-legacy` (original financial RHEN source). The distinct [Rhen language repository](https://github.com/devonalanakins/rhen) is newly initialized with an experimental M0 compiler in a draft PR. The new [Vesper repository](https://github.com/devonalanakins/vesper) is a separate clean rebuild. No legacy source, broker settings, permissions, or deployments have been migrated or activated by this README.
+
+[Current research branches](https://github.com/devonalanakins/vesper-legacy/pulls) · [Security](SECURITY.md)
 
 RHEN is an independent market-research and deterministic automated-execution project. It is separate from Anevum's creative studio.
 
-## Current build
+## Historical source capabilities (not a statement of live service status)
 
 The service runs guarded long-only intraday scanners for a configured universe of US equities or ETFs. It supports both the original opening-range/VWAP mode and a rolling momentum/VWAP mode intended for shorter, repeatable intraday trades. It can:
 
@@ -137,7 +141,7 @@ Administrator bearer token required:
 
 ## Secrets
 
-Never commit Alpaca keys or the administrator token to GitHub. Configure them only in Railway.
+Never commit Alpaca keys or the administrator token to GitHub. Configure them only through the actual authorized provider's secret manager. Older Railway instructions in this historical README are not current deployment guidance.
 
 ## Replay laboratory
 
