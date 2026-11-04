@@ -1,4 +1,10 @@
+<p align="center"><img src=".github/assets/readme-hero.svg" alt="Original RHEN project illustration" width="100%" /></p>
+
 # RHEN
+
+> **Public documentation note · November 3, 2026:** This is research and execution software, not a public brokerage product, profitability claim, or instruction to enable live trading. Review current branch, broker eligibility, risk controls and infrastructure independently; older Railway-era deployment references may be historical.
+
+[Current research branches](https://github.com/devonalanakins/rhen/pulls) · [Security](SECURITY.md)
 
 RHEN is ANEVUM's private market-research and deterministic automated-execution service.
 
